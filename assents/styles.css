@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Meu Website</title>
+  <link rel="stylesheet" href="assents/styles.css">
+  <link rel="icon" href="CityGod.jpg">
+</head>
+<body>
+  <header>
+    <h1>Bem-vindo ao Meu Website!</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>Sobre mim</h2>
+      <p>Olá! Meu nome é [seu nome] e sou um desenvolvedor web apaixonado pela criação de sites incríveis.</p>
+    </section>
+
+    <section>
+      <h2>Meus projetos</h2>
+      <ul>
+        <li><a href="#">Projeto 1</a></li>
+        <li><a href="#">Projeto 2</a></li>
+        <li><a href="#">Projeto 3</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Powered by <a href="https://github.com/GuinhoAntonio-dev">Guinho_Antonio</a></p>
+  </footer>
+</body>
+</html>
