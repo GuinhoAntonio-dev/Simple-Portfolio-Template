@@ -1,6 +1,6 @@
 ## Requirements
 
-- Apache
+- A suitable web server (Apache)
 
 ## Development
 
