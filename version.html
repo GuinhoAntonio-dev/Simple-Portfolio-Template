@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Informações de Versão e Releases</title>
+  <link rel="stylesheet" type="text/css" href="assents/styles_version.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Informações de Versão e Releases</h1>
+
+    <h2>Versão do Website</h2>
+    <p id="versao-website"></p>
+
+    <h2>Últimos Releases</h2>
+    <ul id="ultimos-releases"></ul>
+  </div>
+
+  <script>
+       var url = 'https://api.github.com/repos/GuinhoAntonio-dev/Simple-Portfolio-Template/releases';
+
+fetch(url)
+  .then(response => response.json())
+  .then(data => {
+    // Exibe a versão do website
+    document.getElementById('versao-website').textContent = "1.0.3.2";
+
+    // Exibe os últimos releases
+    data.slice(0, 5).forEach(release => {
+      var listItem = document.createElement('li');
+      listItem.textContent = release.name;
+      document.getElementById('ultimos-releases').appendChild(listItem);
+    });
+  })
+  .catch(error => console.log(error));
+  </script>
+</body>
+</html>
