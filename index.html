@@ -4,11 +4,12 @@
   <meta charset="UTF-8">
   <title>Meu Website</title>
   <link rel="stylesheet" href="assents/styles_index.css">
+  <script src="config.js"></script>
   <link rel="icon" href="CityGod.jpg">
 </head>
 <body>
   <header>
-    <h1>Bem-vindo ao Meu Website!</h1>
+    <h1>Bem-vindo ao <span id="websitename"></span>!</h1>
   </header>
 
   <ul class="menu">
@@ -21,7 +22,7 @@
   <main>
     <section>
       <h2>Sobre mim</h2>
-      <p>Olá! Meu nome é [seu nome] e sou um desenvolvedor web apaixonado pela criação de sites incríveis.</p>
+      <p>Olá! Meu nome é <span id="seunome"></span> e sou um desenvolvedor web apaixonado pela criação de sites incríveis.</p>
     </section>
 
     <section>
@@ -37,5 +38,9 @@
   <footer>
     <p>Powered by <a href="https://github.com/GuinhoAntonio-dev">Guinho_Antonio</a></p>
   </footer>
+  <script>
+    document.getElementById("websitename").textContent = config.namewebsite;
+    document.getElementById("seunome").textContent = config.seunome;
+  </script>
 </body>
 </html>
