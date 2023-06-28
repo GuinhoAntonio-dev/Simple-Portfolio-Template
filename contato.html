@@ -2,13 +2,14 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Meu Website - Contato</title>
+  <title>Contato</title>
   <link rel="stylesheet" href="assents/styles_index.css">
+  <script src="config.js"></script>
   <link rel="icon" href="CityGod.jpg">
 </head>
 <body>
   <header>
-    <h1>Bem-vindo ao Meu Website!</h1>
+    <h1>Bem-vindo ao <span id="websitename"></span>!</h1>
   </header>
 
   <ul class="menu">
@@ -21,12 +22,17 @@
   <main>
     <section>
       <h2>Entre em Contato</h2>
-      <p>Envie-nos um e-mail para <a href="mailto:seuemail@example.com">seuemail@example.com</a>.</p>
+      <p>Envie-nos um e-mail para <a href="mailto:" id="emailLink"></a>.</p>
     </section>
   </main>
 
   <footer>
     <p>Powered by <a href="https://github.com/GuinhoAntonio-dev">Guinho_Antonio</a></p>
   </footer>
+  <script>
+    document.getElementById("emailLink").textContent = config.email;
+    document.getElementById("emailLink").href = "mailto:" + config.email;
+    document.getElementById("websitename").textContent = config.namewebsite;
+  </script>
 </body>
 </html>
